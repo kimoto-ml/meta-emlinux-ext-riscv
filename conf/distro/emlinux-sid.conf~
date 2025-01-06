@@ -1,0 +1,19 @@
+#
+# EMLinux profile
+#
+# Copyright (c) Cybertrust Japan Co., Ltd. 
+#
+# Authors:
+#  Masahiko Kimoto <masahiko.kimoto@miraclelinux.com>
+#
+# SPDX-License-Identifier: MIT
+#
+
+require conf/distro/debian-sid.conf
+require emlinux-common.inc
+
+HOST_DISTRO="emlinux-sid"
+
+PREFERRED_VERSION_linux-cip ?= "6.1.%"
+
+DISTRO_CONFIG_SCRIPT = "${LAYERDIR_emlinux}/conf/distro/emlinux-configscript.sh"
